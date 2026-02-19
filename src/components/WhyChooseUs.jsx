@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
   const reasons = [
     {
       title: 'Industry Experience',
-      description: 'Over 20 years of proven excellence in professional trucking and logistics.',
+      description: 'Started in 2014 with proven excellence in professional trucking and North American logistics.',
       icon: Trophy
     },
     {

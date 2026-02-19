@@ -3,9 +3,22 @@ import { COMPANY } from '../utils/constants'
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-charcoal via-gray-900 to-black dark:from-charcoal dark:via-gray-950 dark:to-black">
+    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-20 bg-gradient-to-br from-charcoal via-gray-900 to-black dark:from-charcoal dark:via-gray-950 dark:to-black">
+      {/* Video Background for Mobile - No Overlay */}
+      <div className="absolute inset-0 md:hidden w-full h-full z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/assets/videos/animate.mp4" type="video/mp4" />
+        </video>
+      </div>
+
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden hidden md:block">
         <div className="absolute top-10 right-10 w-72 h-72 bg-accent-red opacity-10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent-red-light opacity-5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
@@ -14,7 +27,7 @@ export default function Hero() {
       <div className="relative z-10 container-custom px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="text-white animate-fade-in">
+          <div className="text-white animate-fade-in md:bg-transparent bg-black/40 p-6 rounded-lg md:p-0">
             <span className="text-accent-red font-semibold text-sm uppercase tracking-widest">
               Professional Trucking Solutions
             </span>
@@ -45,21 +58,21 @@ export default function Hero() {
             {/* Trust Indicators */}
             <div className="mt-12 grid grid-cols-3 gap-6">
               <div>
-                <div className="text-3xl font-bold text-accent-red">20+</div>
-                <div className="text-gray-400 text-sm">Years in Business</div>
+                <div className="text-3xl font-bold text-accent-red">Founded</div>
+                <div className="text-gray-400 text-sm">2014</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-accent-red">500+</div>
                 <div className="text-gray-400 text-sm">Satisfied Clients</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-accent-red">100%</div>
-                <div className="text-gray-400 text-sm">Safety Commitment</div>
+                <div className="text-3xl font-bold text-accent-red">25+</div>
+                <div className="text-gray-400 text-sm">Vehicles & Trailers</div>
               </div>
             </div>
           </div>
 
-          {/* Video */}
+          {/* Video - Desktop Only */}
           <div className="relative h-96 md:h-full animate-slide-up hidden md:block">
             <video
               autoPlay

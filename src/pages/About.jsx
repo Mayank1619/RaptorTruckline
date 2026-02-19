@@ -31,17 +31,18 @@ export default function About() {
             <div>
               <h2 className="text-4xl font-bold text-charcoal dark:text-white mb-6">Our Story</h2>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                Raptor Truckline was founded with a simple mission: to provide professional, reliable trucking services 
-                that businesses can depend on. Over the years, we've grown from a small operation to a trusted logistics 
-                partner for hundreds of satisfied clients across Canada.
+                Raptor Truckline was founded in 2014 with a simple mission: to provide professional, reliable trucking services 
+                that businesses can depend on. Starting as a small Canadian operation, we've grown into a trusted logistics 
+                partner for over 500 satisfied clients across Canada.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                Our success is built on three pillars: unwavering commitment to safety, professional excellence, and 
-                genuine care for our clients' success. Every member of the Raptor Truckline team shares these values.
+                In 2022, we expanded our operations into the United States, broadening our service reach and capabilities. 
+                Today, our fleet of 10 trucks and 15 trailers operates with unwavering commitment to safety, professional excellence, 
+                and genuine care for our clients' success.
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                Today, we operate a modern fleet of vehicles, employ dedicated drivers, and leverage advanced technology 
-                to ensure your shipments arrive safely, on time, and in perfect condition.
+                Every member of the Raptor Truckline team shares our core values, ensuring your shipments arrive safely, 
+                on time, and in perfect condition.
               </p>
             </div>
 
